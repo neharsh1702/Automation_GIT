@@ -1,0 +1,1271 @@
+﻿{
+  "SchemaVersion": 2,
+  "Flows": [],
+  "SubFlows": [
+    {
+      "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+      "FlowProperties": "System.Collections.Generic.List`1[LeapTest.Entities.FlowPropertyInfo]",
+      "AssigneeUserId": "",
+      "WorkflowStatusId": "1368161e-584c-4c64-999d-85dd0eed4370",
+      "Description": "",
+      "DateCreation": "9/30/2026 6:48:32 PM +00:00",
+      "DateModify": "9/30/2026 6:48:32 PM +00:00",
+      "Title": "DefaultTimeout",
+      "Type": "SubFlow",
+      "IsDeleted": "False",
+      "Id": "cbf1b483-0203-41fe-9129-d6fd18ed1f70",
+      "Flowchart": {
+        "Type": "SubFlow",
+        "ZoomFactor": "75",
+        "XPosition": "-4466",
+        "YPosition": "-4475",
+        "Width": "10000",
+        "Hight": "10000",
+        "IsDeleted": "False",
+        "Id": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+        "BuildingBlocks": [
+          {
+            "Title": "Stopwatch",
+            "XPosition": "6100",
+            "YPosition": "6100",
+            "IsExpanded": "False",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "Stopwatch",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "3bd09a0c-fec7-4c7e-8f64-7422ee45c7f7",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "3bd09a0c-fec7-4c7e-8f64-7422ee45c7f7",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "TimeBlock",
+                "Key": "ResultTimeBlock",
+                "Title": "",
+                "SortOrder": "1",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "True",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "09ac1130-b36f-4b79-ac36-620107fb0e15",
+                "ChildProperties": [
+                  {
+                    "ParentBuildingBlockId": "3bd09a0c-fec7-4c7e-8f64-7422ee45c7f7",
+                    "ParentFlowPropertyId": "09ac1130-b36f-4b79-ac36-620107fb0e15",
+                    "TemplateId": "",
+                    "Type": "NumberResult",
+                    "Key": "Second",
+                    "Title": "",
+                    "SortOrder": "3",
+                    "ValueId": "",
+                    "LType": "LSignal",
+                    "IsExpanded": "False",
+                    "IsBlockPropertyChecked": "",
+                    "CustomSortOrder": "0",
+                    "Id": "fe4fbce4-6995-49aa-b759-e447ff85ee33",
+                    "ChildProperties": [],
+                    "Connections": [
+                      {
+                        "OutputFlowPropertyId": "fe4fbce4-6995-49aa-b759-e447ff85ee33",
+                        "InputFlowPropertyId": "9ecc92c2-dd75-4068-b1d2-a9791bfa95af",
+                        "Id": "6aa47f92-b37e-4bb3-9b7d-c4847e1d5384",
+                        "WireGuides": []
+                      }
+                    ]
+                  }
+                ],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "3bd09a0c-fec7-4c7e-8f64-7422ee45c7f7",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Stopwatch",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "79cb490a-c1b8-4fcd-bd54-3971a189d51e",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "79cb490a-c1b8-4fcd-bd54-3971a189d51e",
+                    "InputFlowPropertyId": "b90f0362-ab3e-42ea-812d-f5fc4244b63a",
+                    "Id": "a7644f9e-ce29-420a-95fe-d6add9bee8a7",
+                    "WireGuides": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Title": "Find Web Element",
+            "XPosition": "6320",
+            "YPosition": "6100",
+            "IsExpanded": "True",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "FindWebElement",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Signal",
+                "Key": "NotFound",
+                "Title": "",
+                "SortOrder": "3",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "026cd1d0-4df2-43e9-9a79-7456ad19a870",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "026cd1d0-4df2-43e9-9a79-7456ad19a870",
+                    "InputFlowPropertyId": "3cd9fce5-6e97-4b64-bc36-dcaf4d1de329",
+                    "Id": "cf07757a-15ad-4976-94af-0f1b1fa2c1f7",
+                    "WireGuides": []
+                  }
+                ]
+              },
+              {
+                "ParentBuildingBlockId": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Find Web Element",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "b90f0362-ab3e-42ea-812d-f5fc4244b63a",
+                "ChildProperties": [],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "DictionaryContentBlock",
+                "Key": "ScrollBlock",
+                "Title": "",
+                "SortOrder": "15",
+                "ValueId": "d68dd409-d7b9-4252-873e-a1b67f1f895a",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "bc676c1d-2186-41ad-b7b6-dfd18083c294",
+                "ChildProperties": [],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "DictionaryContentBlock",
+                "Key": "UseOccuranceBlock",
+                "Title": "",
+                "SortOrder": "12",
+                "ValueId": "8e33d806-ed7a-4705-9abf-0c306ff5f523",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "ec3f87cf-c744-46f2-becc-ccf16f804176",
+                "ChildProperties": [],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "WebElementBlock",
+                "Key": "WebElementBlock",
+                "Title": "",
+                "SortOrder": "1",
+                "ValueId": "6c91efda-400c-4561-83ea-7ecbcb0326ca",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "eff2216e-6d6c-4181-a64f-94e2bf811ef5",
+                "ChildProperties": [
+                  {
+                    "ParentBuildingBlockId": "3de318aa-fb85-4f43-ae1a-63ef9a13fcb5",
+                    "ParentFlowPropertyId": "eff2216e-6d6c-4181-a64f-94e2bf811ef5",
+                    "TemplateId": "",
+                    "Type": "WebElement",
+                    "Key": "WebElement",
+                    "Title": "",
+                    "SortOrder": "0",
+                    "ValueId": "53cf8c4a-9170-4abd-a664-3e7ff43740d6",
+                    "LType": "LWebElement",
+                    "IsExpanded": "False",
+                    "IsBlockPropertyChecked": "",
+                    "CustomSortOrder": "0",
+                    "Id": "a415f3a5-5abd-45af-9aa9-11b57feb7ca8",
+                    "ChildProperties": [],
+                    "Connections": [],
+                    "Value": {
+                      "Value": "4f1e7d41-19d9-4360-bce8-914a8cf04be9",
+                      "Id": "53cf8c4a-9170-4abd-a664-3e7ff43740d6"
+                    }
+                  }
+                ],
+                "Connections": []
+              }
+            ]
+          },
+          {
+            "Title": "Execution Output",
+            "XPosition": "7410",
+            "YPosition": "6100",
+            "IsExpanded": "False",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "GroupExecutionOutput",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "4be425f2-c6a3-4542-b69f-8d7d6d6487a3",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "4be425f2-c6a3-4542-b69f-8d7d6d6487a3",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Execution Output",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "d6ab50f2-f066-4467-a4d3-9675250e5dba",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "d6ab50f2-f066-4467-a4d3-9675250e5dba",
+                    "InputFlowPropertyId": "0c78f10b-da47-4bfe-868a-d1f6951daf47",
+                    "Id": "5def0b6b-b993-4db4-8b86-c4c02e0057a0",
+                    "WireGuides": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Title": "Find Web Element",
+            "XPosition": "6980",
+            "YPosition": "6100",
+            "IsExpanded": "True",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "FindWebElement",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "726506c4-6c29-4240-8945-b5b522cbc587",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "DictionaryContentBlock",
+                "Key": "ScrollBlock",
+                "Title": "",
+                "SortOrder": "15",
+                "ValueId": "1ba60551-f364-4422-84d6-4240b23a6e12",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "3244fa38-9343-433a-9da7-3d1b138b69ab",
+                "ChildProperties": [],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "WebElementBlock",
+                "Key": "WebElementBlock",
+                "Title": "",
+                "SortOrder": "1",
+                "ValueId": "319caccb-be61-4b62-8831-cd66711c7acc",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "35c80303-7031-41e1-817a-399c56121a3b",
+                "ChildProperties": [
+                  {
+                    "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                    "ParentFlowPropertyId": "35c80303-7031-41e1-817a-399c56121a3b",
+                    "TemplateId": "",
+                    "Type": "WebElement",
+                    "Key": "WebElement",
+                    "Title": "",
+                    "SortOrder": "0",
+                    "ValueId": "20fc0a50-f452-418c-9aa7-d03067dc8d6a",
+                    "LType": "LWebElement",
+                    "IsExpanded": "False",
+                    "IsBlockPropertyChecked": "",
+                    "CustomSortOrder": "0",
+                    "Id": "9a5b5768-fa41-4dca-9a4c-16b77d95a513",
+                    "ChildProperties": [],
+                    "Connections": [],
+                    "Value": {
+                      "Value": "4f1e7d41-19d9-4360-bce8-914a8cf04be9",
+                      "Id": "20fc0a50-f452-418c-9aa7-d03067dc8d6a"
+                    }
+                  }
+                ],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "InverseBooleanNumberBlock",
+                "Key": "DefaultTimeout",
+                "Title": "",
+                "SortOrder": "14",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "5b9c1a76-aa5d-48bd-8cd0-0925fdb7106b",
+                "ChildProperties": [
+                  {
+                    "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                    "ParentFlowPropertyId": "5b9c1a76-aa5d-48bd-8cd0-0925fdb7106b",
+                    "TemplateId": "",
+                    "Type": "Number",
+                    "Key": "Timeout",
+                    "Title": "",
+                    "SortOrder": "2",
+                    "ValueId": "89ef4b50-40c4-4e1b-ba92-188e8efdd547",
+                    "LType": "LNumber",
+                    "IsExpanded": "False",
+                    "IsBlockPropertyChecked": "",
+                    "CustomSortOrder": "0",
+                    "Id": "1ce165b9-40f0-4030-a2c7-a720efede776",
+                    "ChildProperties": [],
+                    "Connections": [],
+                    "Value": {
+                      "Value": "15",
+                      "Id": "89ef4b50-40c4-4e1b-ba92-188e8efdd547"
+                    }
+                  },
+                  {
+                    "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                    "ParentFlowPropertyId": "5b9c1a76-aa5d-48bd-8cd0-0925fdb7106b",
+                    "TemplateId": "",
+                    "Type": "Boolean",
+                    "Key": "IsDefaultTimeout",
+                    "Title": "",
+                    "SortOrder": "0",
+                    "ValueId": "f2f6a562-771b-4b06-bc2e-c79c49ae6ab4",
+                    "LType": "LBoolean",
+                    "IsExpanded": "False",
+                    "IsBlockPropertyChecked": "",
+                    "CustomSortOrder": "0",
+                    "Id": "92586ad2-a636-4249-b58c-88c7a2caf161",
+                    "ChildProperties": [],
+                    "Connections": [],
+                    "Value": {
+                      "Value": "False",
+                      "Id": "f2f6a562-771b-4b06-bc2e-c79c49ae6ab4"
+                    }
+                  }
+                ],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Find Web Element",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "641c491b-70ac-4d4d-af98-fe20abb36744",
+                "ChildProperties": [],
+                "Connections": []
+              },
+              {
+                "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Signal",
+                "Key": "NotFound",
+                "Title": "",
+                "SortOrder": "3",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "86270796-6b67-4b9e-9d6d-c351da5f9f55",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "86270796-6b67-4b9e-9d6d-c351da5f9f55",
+                    "InputFlowPropertyId": "852c5413-1b08-4852-9435-2d1c8addf843",
+                    "Id": "d2036d30-b363-48e2-a2dc-6fd75ad69e78",
+                    "WireGuides": []
+                  }
+                ]
+              },
+              {
+                "ParentBuildingBlockId": "726506c4-6c29-4240-8945-b5b522cbc587",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "DictionaryContentBlock",
+                "Key": "UseOccuranceBlock",
+                "Title": "",
+                "SortOrder": "12",
+                "ValueId": "19603e85-259e-49f2-8e14-8eb012f026e8",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "8c5eeb92-87e0-4c63-9670-d63e635265f5",
+                "ChildProperties": [],
+                "Connections": []
+              }
+            ]
+          },
+          {
+            "Title": "Stopwatch",
+            "XPosition": "6750",
+            "YPosition": "6100",
+            "IsExpanded": "False",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "Stopwatch",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "9fc98b89-144a-40dc-a46c-72a83e95720b",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "9fc98b89-144a-40dc-a46c-72a83e95720b",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Stopwatch",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "ba0c3edb-7adf-43f8-b095-5808647f0a41",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "ba0c3edb-7adf-43f8-b095-5808647f0a41",
+                    "InputFlowPropertyId": "641c491b-70ac-4d4d-af98-fe20abb36744",
+                    "Id": "88cd073d-47b0-44fb-9575-6f1501198b2e",
+                    "WireGuides": []
+                  }
+                ]
+              },
+              {
+                "ParentBuildingBlockId": "9fc98b89-144a-40dc-a46c-72a83e95720b",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "TimeBlock",
+                "Key": "ResultTimeBlock",
+                "Title": "",
+                "SortOrder": "1",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "True",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "dd50d217-aa9f-4122-bfba-9b410268b206",
+                "ChildProperties": [
+                  {
+                    "ParentBuildingBlockId": "9fc98b89-144a-40dc-a46c-72a83e95720b",
+                    "ParentFlowPropertyId": "dd50d217-aa9f-4122-bfba-9b410268b206",
+                    "TemplateId": "",
+                    "Type": "NumberResult",
+                    "Key": "Second",
+                    "Title": "",
+                    "SortOrder": "3",
+                    "ValueId": "",
+                    "LType": "LSignal",
+                    "IsExpanded": "False",
+                    "IsBlockPropertyChecked": "",
+                    "CustomSortOrder": "0",
+                    "Id": "b059e1ee-0378-494a-9b25-929f07096423",
+                    "ChildProperties": [],
+                    "Connections": [
+                      {
+                        "OutputFlowPropertyId": "b059e1ee-0378-494a-9b25-929f07096423",
+                        "InputFlowPropertyId": "d02bfa5e-446b-4683-809c-d2023d3d679a",
+                        "Id": "45758b96-c68a-4e0a-9a32-cb7b3c3c6adf",
+                        "WireGuides": []
+                      }
+                    ]
+                  }
+                ],
+                "Connections": []
+              }
+            ]
+          },
+          {
+            "Title": "Execution Input",
+            "XPosition": "5910",
+            "YPosition": "6100",
+            "IsExpanded": "False",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "GroupExecutionInput",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "b30e3abb-3022-4a78-8c84-22db5ab21a07",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "b30e3abb-3022-4a78-8c84-22db5ab21a07",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Execution Input",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "63a4e725-ab07-4bb0-98b1-a1775e62a0e8",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "63a4e725-ab07-4bb0-98b1-a1775e62a0e8",
+                    "InputFlowPropertyId": "79cb490a-c1b8-4fcd-bd54-3971a189d51e",
+                    "Id": "6fdf1550-4385-4b79-b07b-7de4ef959075",
+                    "WireGuides": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Title": "Compare",
+            "XPosition": "6540",
+            "YPosition": "6100",
+            "IsExpanded": "False",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "Compare",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "c13b4489-5536-47fc-9057-2ea97e820d3f",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "c13b4489-5536-47fc-9057-2ea97e820d3f",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "TypeSelector",
+                "Key": "ComparationType",
+                "Title": "",
+                "SortOrder": "5",
+                "ValueId": "8048ca52-cc92-4cb6-bafe-88838b96fcde",
+                "LType": "LText",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "2b65f73a-b665-4415-91c2-aa3c251329d2",
+                "ChildProperties": [],
+                "Connections": [],
+                "Value": {
+                  "Value": "A",
+                  "Id": "8048ca52-cc92-4cb6-bafe-88838b96fcde"
+                }
+              },
+              {
+                "ParentBuildingBlockId": "c13b4489-5536-47fc-9057-2ea97e820d3f",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Compare",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "3cd9fce5-6e97-4b64-bc36-dcaf4d1de329",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "3cd9fce5-6e97-4b64-bc36-dcaf4d1de329",
+                    "InputFlowPropertyId": "ba0c3edb-7adf-43f8-b095-5808647f0a41",
+                    "Id": "959911a6-7a86-4390-8a08-7b712430c668",
+                    "WireGuides": []
+                  }
+                ]
+              },
+              {
+                "ParentBuildingBlockId": "c13b4489-5536-47fc-9057-2ea97e820d3f",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Text",
+                "Key": "ValueB",
+                "Title": "",
+                "SortOrder": "2",
+                "ValueId": "dc306faa-2f4d-4cf6-bda5-dfd31854b888",
+                "LType": "LText",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "769ffe29-1ade-4757-91db-e80218badff6",
+                "ChildProperties": [],
+                "Connections": [],
+                "Value": {
+                  "Value": "10",
+                  "Id": "dc306faa-2f4d-4cf6-bda5-dfd31854b888"
+                }
+              },
+              {
+                "ParentBuildingBlockId": "c13b4489-5536-47fc-9057-2ea97e820d3f",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Text",
+                "Key": "ValueA",
+                "Title": "",
+                "SortOrder": "1",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "9ecc92c2-dd75-4068-b1d2-a9791bfa95af",
+                "ChildProperties": [],
+                "Connections": []
+              }
+            ]
+          },
+          {
+            "Title": "Compare",
+            "XPosition": "7210",
+            "YPosition": "6100",
+            "IsExpanded": "False",
+            "Width": "150",
+            "TemplateId": "",
+            "FlowchartId": "5f8b6711-87ea-4f82-8186-f76bc08b5d43",
+            "Type": "Compare",
+            "Note": "",
+            "IsNoteVisible": "False",
+            "Id": "ea1c55a2-4cd1-463f-85bb-9bdd3f4dcdc2",
+            "FlowProperties": [
+              {
+                "ParentBuildingBlockId": "ea1c55a2-4cd1-463f-85bb-9bdd3f4dcdc2",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Text",
+                "Key": "ValueB",
+                "Title": "",
+                "SortOrder": "2",
+                "ValueId": "814e232a-b231-4175-bd32-1e1dd5488e30",
+                "LType": "LText",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "00871dbc-7bb6-483f-af91-8c703dbe302f",
+                "ChildProperties": [],
+                "Connections": [],
+                "Value": {
+                  "Value": "15",
+                  "Id": "814e232a-b231-4175-bd32-1e1dd5488e30"
+                }
+              },
+              {
+                "ParentBuildingBlockId": "ea1c55a2-4cd1-463f-85bb-9bdd3f4dcdc2",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Header",
+                "Key": "Header",
+                "Title": "Compare",
+                "SortOrder": "0",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "852c5413-1b08-4852-9435-2d1c8addf843",
+                "ChildProperties": [],
+                "Connections": [
+                  {
+                    "OutputFlowPropertyId": "852c5413-1b08-4852-9435-2d1c8addf843",
+                    "InputFlowPropertyId": "d6ab50f2-f066-4467-a4d3-9675250e5dba",
+                    "Id": "6978d60b-5b31-424f-877b-61b6e3227bf5",
+                    "WireGuides": []
+                  }
+                ]
+              },
+              {
+                "ParentBuildingBlockId": "ea1c55a2-4cd1-463f-85bb-9bdd3f4dcdc2",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "TypeSelector",
+                "Key": "ComparationType",
+                "Title": "",
+                "SortOrder": "5",
+                "ValueId": "36d587ce-5943-4653-baa1-3ff21301ad90",
+                "LType": "LText",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "cdb9d696-d7cf-437c-93d9-01471f9098ea",
+                "ChildProperties": [],
+                "Connections": [],
+                "Value": {
+                  "Value": "A",
+                  "Id": "36d587ce-5943-4653-baa1-3ff21301ad90"
+                }
+              },
+              {
+                "ParentBuildingBlockId": "ea1c55a2-4cd1-463f-85bb-9bdd3f4dcdc2",
+                "ParentFlowPropertyId": "",
+                "TemplateId": "",
+                "Type": "Text",
+                "Key": "ValueA",
+                "Title": "",
+                "SortOrder": "1",
+                "ValueId": "",
+                "LType": "LSignal",
+                "IsExpanded": "False",
+                "IsBlockPropertyChecked": "",
+                "CustomSortOrder": "0",
+                "Id": "d02bfa5e-446b-4683-809c-d2023d3d679a",
+                "ChildProperties": [],
+                "Connections": []
+              }
+            ]
+          }
+        ],
+        "FlowProperties": [
+          {
+            "ParentBuildingBlockId": "cbf1b483-0203-41fe-9129-d6fd18ed1f70",
+            "ParentFlowPropertyId": "",
+            "TemplateId": "7ba8614f-f417-4bed-8575-8dfe2e517db2",
+            "Type": "ExecutionModuleOutput",
+            "Key": "ModuleOutput",
+            "Title": "Execution Output",
+            "SortOrder": "2",
+            "ValueId": "",
+            "LType": "LSignal",
+            "IsExpanded": "False",
+            "IsBlockPropertyChecked": "",
+            "CustomSortOrder": "0",
+            "Id": "0c78f10b-da47-4bfe-868a-d1f6951daf47",
+            "ChildProperties": [],
+            "Connections": []
+          },
+          {
+            "ParentBuildingBlockId": "cbf1b483-0203-41fe-9129-d6fd18ed1f70",
+            "ParentFlowPropertyId": "",
+            "TemplateId": "4347e311-66a6-49db-875c-9eba132b0f14",
+            "Type": "ExecutionModuleInput",
+            "Key": "ModuleInput",
+            "Title": "Execution Input",
+            "SortOrder": "1",
+            "ValueId": "",
+            "LType": "LSignal",
+            "IsExpanded": "False",
+            "IsBlockPropertyChecked": "",
+            "CustomSortOrder": "0",
+            "Id": "8272556c-23e2-42a5-a57d-0a34e7358539",
+            "ChildProperties": [],
+            "Connections": [
+              {
+                "OutputFlowPropertyId": "8272556c-23e2-42a5-a57d-0a34e7358539",
+                "InputFlowPropertyId": "63a4e725-ab07-4bb0-98b1-a1775e62a0e8",
+                "Id": "3ac794f0-5a99-4856-8112-69463a20e1cd",
+                "WireGuides": []
+              }
+            ]
+          },
+          {
+            "ParentBuildingBlockId": "cbf1b483-0203-41fe-9129-d6fd18ed1f70",
+            "ParentFlowPropertyId": "",
+            "TemplateId": "",
+            "Type": "ModuleHeader",
+            "Key": "Header",
+            "Title": "",
+            "SortOrder": "0",
+            "ValueId": "",
+            "LType": "LSignal",
+            "IsExpanded": "False",
+            "IsBlockPropertyChecked": "",
+            "CustomSortOrder": "0",
+            "Id": "f629b979-e3f7-4570-9b18-f8923a462e5e",
+            "ChildProperties": [],
+            "Connections": []
+          }
+        ]
+      }
+    }
+  ],
+  "UnassociatedExportData": {
+    "ExportMetadata": [
+      {
+        "DoubleGroupSeparator": ",",
+        "DoubleDecimalSeparator": ".",
+        "CurrentBuildNumber": "2026.2.357.0",
+        "DBVersion": "55",
+        "FullDateTimeFormat": "dddd, MMMM d, yyyy h:mm:ss tt",
+        "CultureName": "en-US"
+      }
+    ],
+    "FlowTreeHierarchyItem0": [
+      {
+        "MetadataId": "42ab50af-93c7-425d-a06c-09efedc7a5e2",
+        "ParentId": "c6f687c4-d7dc-4dc0-b82a-97a70dbe0022",
+        "Title": "Sub-Flows",
+        "Description": "",
+        "Type": "Folder",
+        "IsReferenced": "False",
+        "DateCreation": "5/4/2022 6:48:51 AM +00:00",
+        "DateModify": "5/4/2022 6:48:51 AM +00:00",
+        "PreviousSiblingId": "",
+        "LinkedWith": "None",
+        "Id": "05cb3713-bc47-4183-af8b-cf75d823c76e"
+      },
+      {
+        "MetadataId": "8cf1dde4-9af5-41d5-8ec1-9d6d1298957c",
+        "ParentId": "e7ad7681-a675-43b0-86dc-ea8d19e6ea33",
+        "Title": "Building Blocks",
+        "Description": "",
+        "Type": "Folder",
+        "IsReferenced": "False",
+        "DateCreation": "5/4/2022 6:06:11 AM +00:00",
+        "DateModify": "5/4/2022 8:08:40 AM +00:00",
+        "PreviousSiblingId": "",
+        "LinkedWith": "None",
+        "Id": "c6f687c4-d7dc-4dc0-b82a-97a70dbe0022"
+      },
+      {
+        "MetadataId": "cbf1b483-0203-41fe-9129-d6fd18ed1f70",
+        "ParentId": "05cb3713-bc47-4183-af8b-cf75d823c76e",
+        "Title": "DefaultTimeout",
+        "Description": "",
+        "Type": "SubFlow",
+        "IsReferenced": "False",
+        "DateCreation": "5/4/2022 7:34:03 AM +00:00",
+        "DateModify": "5/4/2022 7:34:12 AM +00:00",
+        "PreviousSiblingId": "",
+        "LinkedWith": "None",
+        "Id": "ca00651f-e3ec-44b5-afe9-a78c687c58bb"
+      },
+      {
+        "MetadataId": "4f1e7d41-19d9-4360-bce8-914a8cf04be9",
+        "ParentId": "ca00651f-e3ec-44b5-afe9-a78c687c58bb",
+        "Title": "text <input>",
+        "Description": "",
+        "Type": "WebElement",
+        "IsReferenced": "False",
+        "DateCreation": "5/4/2022 7:07:33 AM +00:00",
+        "DateModify": "5/4/2022 7:34:43 AM +00:00",
+        "PreviousSiblingId": "",
+        "LinkedWith": "None",
+        "Id": "cb01e699-a530-4e95-866e-43bf52707f4d"
+      },
+      {
+        "MetadataId": "cdf18723-729c-4d53-a7b6-ec03f72a650d",
+        "ParentId": "b8dbf3c4-2122-4b73-8334-21c1cd1b0e1e",
+        "Title": "Suites [Blocks] - Don't Delete",
+        "Description": "",
+        "Type": "Folder",
+        "IsReferenced": "False",
+        "DateCreation": "1/5/2022 12:51:42 PM +00:00",
+        "DateModify": "4/20/2026 12:05:20 PM +00:00",
+        "PreviousSiblingId": "",
+        "LinkedWith": "None",
+        "Id": "db043244-b81a-459b-9c6b-a761e51ffe84"
+      },
+      {
+        "MetadataId": "a434575f-c238-4738-9095-a6dbbe6b59ec",
+        "ParentId": "db043244-b81a-459b-9c6b-a761e51ffe84",
+        "Title": "General",
+        "Description": "",
+        "Type": "Folder",
+        "IsReferenced": "False",
+        "DateCreation": "5/4/2022 6:06:05 AM +00:00",
+        "DateModify": "9/18/2024 8:18:12 AM +00:00",
+        "PreviousSiblingId": "94c648f0-0d0b-4831-9c88-f004f5c8bce0",
+        "LinkedWith": "None",
+        "Id": "e7ad7681-a675-43b0-86dc-ea8d19e6ea33"
+      }
+    ],
+    "FlowTreeHierarchyItemSortOrder2": [
+      {
+        "PreviousSiblingId": "",
+        "Id": "05cb3713-bc47-4183-af8b-cf75d823c76e"
+      },
+      {
+        "PreviousSiblingId": "",
+        "Id": "c6f687c4-d7dc-4dc0-b82a-97a70dbe0022"
+      },
+      {
+        "PreviousSiblingId": "",
+        "Id": "ca00651f-e3ec-44b5-afe9-a78c687c58bb"
+      },
+      {
+        "PreviousSiblingId": "",
+        "Id": "cb01e699-a530-4e95-866e-43bf52707f4d"
+      },
+      {
+        "PreviousSiblingId": "",
+        "Id": "db043244-b81a-459b-9c6b-a761e51ffe84"
+      },
+      {
+        "PreviousSiblingId": "94c648f0-0d0b-4831-9c88-f004f5c8bce0",
+        "Id": "e7ad7681-a675-43b0-86dc-ea8d19e6ea33"
+      }
+    ],
+    "HierarchyItemMetadata1": [
+      {
+        "Title": "Sub-Flows",
+        "Description": "",
+        "Type": "Folder",
+        "LinkedWith": "None",
+        "Id": "42ab50af-93c7-425d-a06c-09efedc7a5e2"
+      },
+      {
+        "Title": "text <input>",
+        "Description": "",
+        "Type": "WebElement",
+        "LinkedWith": "None",
+        "Id": "4f1e7d41-19d9-4360-bce8-914a8cf04be9"
+      },
+      {
+        "Title": "Building Blocks",
+        "Description": "",
+        "Type": "Folder",
+        "LinkedWith": "None",
+        "Id": "8cf1dde4-9af5-41d5-8ec1-9d6d1298957c"
+      },
+      {
+        "Title": "General",
+        "Description": "",
+        "Type": "Folder",
+        "LinkedWith": "None",
+        "Id": "a434575f-c238-4738-9095-a6dbbe6b59ec"
+      },
+      {
+        "Title": "DefaultTimeout",
+        "Description": "",
+        "Type": "SubFlow",
+        "LinkedWith": "None",
+        "Id": "cbf1b483-0203-41fe-9129-d6fd18ed1f70"
+      },
+      {
+        "Title": "Suites [Blocks] - Don't Delete",
+        "Description": "",
+        "Type": "Folder",
+        "LinkedWith": "None",
+        "Id": "cdf18723-729c-4d53-a7b6-ec03f72a650d"
+      }
+    ],
+    "UsedTypes": [
+      {
+        "ImageCollectionNestingItem": "WebCollectionNestingItem",
+        "ImageCollectionNestingItem20": "WebCollectionNestingItem11"
+      },
+      {
+        "ImageCollectionNestingItem": "DesktopCollectionNestingItem",
+        "ImageCollectionNestingItem20": "DesktopCollectionNestingItem15"
+      },
+      {
+        "ImageCollectionNestingItem": "ConnectedPropertyInfo",
+        "ImageCollectionNestingItem20": "ConnectedPropertyInfo8"
+      },
+      {
+        "ImageCollectionNestingItem": "FlowPropertyInfo",
+        "ImageCollectionNestingItem20": "FlowPropertyInfo7"
+      },
+      {
+        "ImageCollectionNestingItem": "BuildingBlockInfo",
+        "ImageCollectionNestingItem20": "BuildingBlockInfo6"
+      },
+      {
+        "ImageCollectionNestingItem": "Flowchart",
+        "ImageCollectionNestingItem20": "Flowchart5"
+      },
+      {
+        "ImageCollectionNestingItem": "ConnectedPropertyWireguide",
+        "ImageCollectionNestingItem20": "ConnectedPropertyWireguide62"
+      },
+      {
+        "ImageCollectionNestingItem": "FlowTreeHierarchyItem",
+        "ImageCollectionNestingItem20": "FlowTreeHierarchyItem0"
+      },
+      {
+        "ImageCollectionNestingItem": "HierarchyItemMetadata",
+        "ImageCollectionNestingItem20": "HierarchyItemMetadata1"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleHierarchySortOrder",
+        "ImageCollectionNestingItem20": "ScheduleHierarchySortOrder45"
+      },
+      {
+        "ImageCollectionNestingItem": "FlowTreeHierarchyItemSortOrder",
+        "ImageCollectionNestingItem20": "FlowTreeHierarchyItemSortOrder2"
+      },
+      {
+        "ImageCollectionNestingItem": "WebDynamicFieldEntity",
+        "ImageCollectionNestingItem20": "WebDynamicFieldEntity12"
+      },
+      {
+        "ImageCollectionNestingItem": "WebElementInfo",
+        "ImageCollectionNestingItem20": "WebElementInfo9"
+      },
+      {
+        "ImageCollectionNestingItem": "DesktopDynamicFieldEntity",
+        "ImageCollectionNestingItem20": "DesktopDynamicFieldEntity16"
+      },
+      {
+        "ImageCollectionNestingItem": "DesktopElementPatternMethodEntity",
+        "ImageCollectionNestingItem20": "DesktopElementPatternMethodEn17"
+      },
+      {
+        "ImageCollectionNestingItem": "DesktopElementInfo",
+        "ImageCollectionNestingItem20": "DesktopElementInfo13"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleAction",
+        "ImageCollectionNestingItem20": "ScheduleAction50"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleHierarchy",
+        "ImageCollectionNestingItem20": "ScheduleHierarchy43"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleHierarchyItemMetadata",
+        "ImageCollectionNestingItem20": "ScheduleHierarchyItemMetadata44"
+      },
+      {
+        "ImageCollectionNestingItem": "NewScheduleInfo",
+        "ImageCollectionNestingItem20": "NewScheduleInfo49"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleInfoModel",
+        "ImageCollectionNestingItem20": "ScheduleInfoModel60"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRecurring",
+        "ImageCollectionNestingItem20": "ScheduleRecurring52"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRecurringDay",
+        "ImageCollectionNestingItem20": "ScheduleRecurringDay53"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRecurringMonth",
+        "ImageCollectionNestingItem20": "ScheduleRecurringMonth54"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRecurringSmallUnitOfTime",
+        "ImageCollectionNestingItem20": "ScheduleRecurringSmallUnitOfT56"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRecurringSmallUnitOfTimeCustom",
+        "ImageCollectionNestingItem20": "ScheduleRecurringSmallUnitOfT55"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRecurringWeek",
+        "ImageCollectionNestingItem20": "ScheduleRecurringWeek57"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleRunListStep",
+        "ImageCollectionNestingItem20": "ScheduleRunListStep51"
+      },
+      {
+        "ImageCollectionNestingItem": "ScheduleVariable",
+        "ImageCollectionNestingItem20": "ScheduleVariable58"
+      },
+      {
+        "ImageCollectionNestingItem": "RunListInfo",
+        "ImageCollectionNestingItem20": "RunListInfo46"
+      },
+      {
+        "ImageCollectionNestingItem": "RunListInfoModel",
+        "ImageCollectionNestingItem20": "RunListInfoModel59"
+      },
+      {
+        "ImageCollectionNestingItem": "RunListsStepFlow",
+        "ImageCollectionNestingItem20": "RunListsStepFlow48"
+      },
+      {
+        "ImageCollectionNestingItem": "RunListStep",
+        "ImageCollectionNestingItem20": "RunListStep47"
+      },
+      {
+        "ImageCollectionNestingItem": "LBooleanEntity",
+        "ImageCollectionNestingItem20": "LBooleanEntity23"
+      },
+      {
+        "ImageCollectionNestingItem": "LNumberEntity",
+        "ImageCollectionNestingItem20": "LNumberEntity27"
+      },
+      {
+        "ImageCollectionNestingItem": "LDateEntity",
+        "ImageCollectionNestingItem20": "LDateEntity25"
+      },
+      {
+        "ImageCollectionNestingItem": "LDateTimeEntity",
+        "ImageCollectionNestingItem20": "LDateTimeEntity26"
+      },
+      {
+        "ImageCollectionNestingItem": "LTimeEntity",
+        "ImageCollectionNestingItem20": "LTimeEntity30"
+      },
+      {
+        "ImageCollectionNestingItem": "LTextEntity",
+        "ImageCollectionNestingItem20": "LTextEntity29"
+      },
+      {
+        "ImageCollectionNestingItem": "LPositionEntity",
+        "ImageCollectionNestingItem20": "LPositionEntity28"
+      },
+      {
+        "ImageCollectionNestingItem": "LAreaEntity",
+        "ImageCollectionNestingItem20": "LAreaEntity22"
+      },
+      {
+        "ImageCollectionNestingItem": "LFileEntity",
+        "ImageCollectionNestingItem20": "LFileEntity33"
+      },
+      {
+        "ImageCollectionNestingItem": "LImageCollectionEntity",
+        "ImageCollectionNestingItem20": "LImageCollectionEntity35"
+      },
+      {
+        "ImageCollectionNestingItem": "LImageCollectionItemEntity",
+        "ImageCollectionNestingItem20": "LImageCollectionItemEntity36"
+      },
+      {
+        "ImageCollectionNestingItem": "LWebCollectionEntity",
+        "ImageCollectionNestingItem20": "LWebCollectionEntity38"
+      },
+      {
+        "ImageCollectionNestingItem": "LWebCollectionItemEntity",
+        "ImageCollectionNestingItem20": "LWebCollectionItemEntity39"
+      },
+      {
+        "ImageCollectionNestingItem": "LDesktopCollectionEntity",
+        "ImageCollectionNestingItem20": "LDesktopCollectionEntity40"
+      },
+      {
+        "ImageCollectionNestingItem": "LDesktopCollectionItemEntity",
+        "ImageCollectionNestingItem20": "LDesktopCollectionItemEntity41"
+      },
+      {
+        "ImageCollectionNestingItem": "LImageEntity",
+        "ImageCollectionNestingItem20": "LImageEntity34"
+      },
+      {
+        "ImageCollectionNestingItem": "LDesktopElementEntity",
+        "ImageCollectionNestingItem20": "LDesktopElementEntity31"
+      },
+      {
+        "ImageCollectionNestingItem": "LWebElementEntity",
+        "ImageCollectionNestingItem20": "LWebElementEntity32"
+      },
+      {
+        "ImageCollectionNestingItem": "LCodeCSharpEntity",
+        "ImageCollectionNestingItem20": "LCodeCSharpEntity24"
+      },
+      {
+        "ImageCollectionNestingItem": "AssemblyReferenceEntity",
+        "ImageCollectionNestingItem20": "AssemblyReferenceEntity37"
+      },
+      {
+        "ImageCollectionNestingItem": "InteractiveImageInfo",
+        "ImageCollectionNestingItem20": "InteractiveImageInfo18"
+      },
+      {
+        "ImageCollectionNestingItem": "DataFileInfo",
+        "ImageCollectionNestingItem20": "DataFileInfo21"
+      },
+      {
+        "ImageCollectionNestingItem": "SubFlowInfo",
+        "ImageCollectionNestingItem20": "SubFlowInfo4"
+      },
+      {
+        "ImageCollectionNestingItem": "ImageCollectionInfo",
+        "ImageCollectionNestingItem20": "ImageCollectionInfo19"
+      },
+      {
+        "ImageCollectionNestingItem": "WebCollectionInfo",
+        "ImageCollectionNestingItem20": "WebCollectionInfo10"
+      },
+      {
+        "ImageCollectionNestingItem": "DesktopCollectionInfo",
+        "ImageCollectionNestingItem20": "DesktopCollectionInfo14"
+      },
+      {
+        "ImageCollectionNestingItem": "FlowInfo",
+        "ImageCollectionNestingItem20": "FlowInfo3"
+      },
+      {
+        "ImageCollectionNestingItem": "FlowTestCase",
+        "ImageCollectionNestingItem20": "FlowTestCase42"
+      }
+    ],
+    "WebElementInfo9": [
+      {
+        "Uri": "https://www.google.com/?gws_rd=ssl",
+        "Fields": "",
+        "StrategyListSource": "99b26a0b-f346-4154-82dd-be2bad31a3b3",
+        "HasImage": "False",
+        "RawId": "c33459d1-28cd-4206-bf54-5aae42da0208",
+        "SelectedStrategyId": "87bfe2a1-f725-41a5-a61c-cbc2f715f03a",
+        "SelectedStrategyHolder": "LeapTest.Entities.UIElements.Web.WebStrategyHolder",
+        "Description": "",
+        "DateCreation": "5/4/2022 7:33:52 AM +00:00",
+        "DateModify": "6/20/2023 6:42:24 AM +00:00",
+        "Title": "text <input>",
+        "Type": "WebElement",
+        "IsDeleted": "False",
+        "Id": "4f1e7d41-19d9-4360-bce8-914a8cf04be9"
+      }
+    ]
+  }
+}
